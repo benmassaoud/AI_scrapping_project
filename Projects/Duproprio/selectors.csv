@@ -1,0 +1,13 @@
+postal_code,"postalCode"": ""{}"""
+type,div.listing-address > h3 > a
+price,div.listing-price > div
+sold,.listing-location__sold
+adress,div.listing-location__group-address > div > h1
+city,div.listing-location__group-address > div > h2 > a:nth-child(1)
+region,div.listing-location__group-address > div > h2 > a:nth-child(2)
+code,div.listing-address > h4
+rooms,div:nth-child(1) > div.listing-main-characteristics__label > span.listing-main-characteristics__number
+bathrooms,.listing-main-characteristics__item--bathrooms > div.listing-main-characteristics__label > span.listing-main-characteristics__number
+halfpaths,.listing-main-characteristics__item--half-baths > div.listing-main-characteristics__label > span.listing-main-characteristics__number
+living_space_area,div.listing-main-characteristics__item.listing-main-characteristics__item--living-space-area > div.listing-main-characteristics__item-dimensions > span.listing-main-characteristics__number.listing-main-characteristics__number--dimensions
+lot_dimensions,div.listing-main-characteristics__item.listing-main-characteristics__item--lot-dimensions > div.listing-main-characteristics__item-dimensions > span.listing-main-characteristics__number.listing-main-characteristics__number--dimensions
