@@ -2,7 +2,7 @@ postal_code,"postalCode"": ""{}"""
 type,div.listing-address > h3 > a
 price,div.listing-price > div
 sold,.listing-location__sold
-adress,div.listing-location__group-address > div > h1
+address,div.listing-location__group-address > div > h1
 city,div.listing-location__group-address > div > h2 > a:nth-child(1)
 region,div.listing-location__group-address > div > h2 > a:nth-child(2)
 code,div.listing-address > h4

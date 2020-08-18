@@ -1,10 +1,8 @@
 import datetime
 import random
 import re
-import sys
 import time
 import requests
-from requests import Response
 from requests_html import AsyncHTMLSession, HTMLSession
 
 # Important : Do not delete those imports
@@ -16,7 +14,7 @@ class AsyncCollector:
     def __init__(self):
         self.session = AsyncHTMLSession()
 
-    def get_status(self, response: Response):
+    def get_status(self, response):
         return True if response.status_code in range(200, 300) else False
 
     def remove_quotes(self, string):
@@ -83,16 +81,14 @@ class AsyncCollector:
             print("\033[31mImpossible de se connecter au site.\033[0m")
 
     async def get_page_async(self, page_url, need_render=True):
-        print("Connexion à {}".format(page_url))
-        self.sleep(0.1)
+
+        self.sleep(0.3)
         asession = AsyncHTMLSession()
         r = await asession.get(page_url)
-        #t = r.result().arender()
-        # self.sleep(5)
-        #r.html.render(retries=1)
+        print(f"Connexion à {page_url}...")
+        self.sleep(0.3)
         await asession.close()
-        print(f"Connecté à {page_url}")
-        self.sleep(0.25)
+        # print(f"Connecté")
         return r
 
     def sleep(self, fixed: float = None):

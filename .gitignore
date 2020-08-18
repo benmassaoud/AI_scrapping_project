@@ -1,3 +1,5 @@
 /ScrappingDB.db
 *.xlsx
 *.csv
+/ScrappingDB.db-journal
+/venv/
